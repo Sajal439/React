@@ -1,10 +1,19 @@
+import { useState } from "react";
 import "./App.css";
 
+// react control ui updation
+// using react hooks
+
 function App() {
-  let counter = 15;
+  let [counter, setCounter] = useState(0);
 
   const addValue = () => {
-    console.log("value added", Math.random());
+    setCounter(counter + 1);
+  };
+  const removeValue = () => {
+    if (counter > 0) {
+      setCounter(counter - 1);
+    }
   };
 
   return (
@@ -14,9 +23,11 @@ function App() {
 
       <button onClick={addValue}>Add Value</button>
 
-      <button>Remove Value</button>
+      <button onClick={removeValue}>Remove Value</button>
     </>
   );
 }
 
 export default App;
+
+//9350040661 - carpenter
