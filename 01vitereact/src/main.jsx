@@ -1,3 +1,4 @@
+/* eslint-disable no-unused-vars */
 import React from "react";
 import ReactDOM from "react-dom";
 import App from "./App";
@@ -10,6 +11,7 @@ function MyApp() {
     </div>
   );
 }
+export default MyApp;
 // const reactElement = {
 //   type: "a",
 //   props: {
